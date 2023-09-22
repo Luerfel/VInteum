@@ -9,7 +9,7 @@ public class Player {
         this.pontos = 0;
     }
     
-    public Card ()
+    
     
     
 }

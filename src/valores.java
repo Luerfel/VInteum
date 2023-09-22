@@ -1,18 +1,23 @@
-public enum valores
+public enum Valores {
+    As("As", 11),     Dois("Dois", 2),      Tres("Tres", 3),      Quatro("Quatro", 4),        Cinco("Cinco", 5),        Seis("Seis", 6), 
 
-Ace("Ace", 11),     Deuce("Deuce", 2),      Three("Three", 3),      Four("Four", 4),        Five("Five", 5),        Six("Six", 6), 
-Seven("Seven", 7),  Eight("Eight", 8),      Nine("Nine", 9),        Ten("Ten", 10),         Jack("Jack", 10),       Queen("Queen", 10), 
-King("King", 10);
+    Sete("Sete", 7),  Oito("Oito", 8),      Nove("Nove", 9),        Dez("Dez", 10),         Valete("Valete", 10),       Dama("Dama", 10), 
+    
+    Rei("Rei", 10); 
 
- String rankname
- int rankValue;
+    String rankName;
+    int rankValor;
 
-    Rank(String rankName, int rankValue){
+    Valores(String rankName, int rankValor){
         this.rankName = rankName;
-        this.rankValue = rankValue;
+        this.rankValor = rankValor;
     }
 
-    public String toString(){
+    public String valoresname(){
         return rankName;
+    }
+
+    public int rankValor(){
+        return rankValor;
     }
 }

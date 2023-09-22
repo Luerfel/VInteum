@@ -1,18 +1,31 @@
-public class Card 
-{
-   private final String face; // face of card ("Ace", "Deuce", ...)
-   private final String suit; // suit of card ("Hearts", "Diamonds", ...)
+public class Card {
 
-   // two-argument constructor initializes card's face and suit
-   public Card(String face, String suit)
-   {
-      this.face = face;
-      this.suit = suit; 
-   } 
 
-   // return String representation of Card
-   public String toString() 
-   { 
-      return face + " of " + suit;
-   } 
-} // end class Card
+private Suit suit;
+private Valores valores;
+
+
+public Card(Suit suit, Valores valores){
+   this.suit = suit;
+   this.valores = valores;
+}
+
+public int getValores(){
+   return valores.rankValue;
+}
+public Suit getSuit(){
+    return suit;
+}
+
+public Valores getRank(){
+    return valores;
+}
+public String toString(){
+      return ("["+valores+" de "+ suit + "] ("+this.getValores()+")");
+}
+public Card(Card card){
+    this.suit = card.getSuit();
+    this.valores = card.getRank();
+}
+
+}
