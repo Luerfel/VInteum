@@ -4,7 +4,7 @@ Ace("Ace", 11),     Deuce("Deuce", 2),      Three("Three", 3),      Four("Four",
 Seven("Seven", 7),  Eight("Eight", 8),      Nine("Nine", 9),        Ten("Ten", 10),         Jack("Jack", 10),       Queen("Queen", 10), 
 King("King", 10);
 
- 
+ String rankname
  int rankValue;
 
     Rank(String rankName, int rankValue){
